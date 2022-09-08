@@ -18,16 +18,16 @@ import com.ibm7.hellobank.services.ClientService;
 
 @RestController
 @RequestMapping("/clients")
-public class ClientController {
+public class ClienteController {
   @Autowired
   private ClientService clientService;
 
-  @PostMapping
-  public ResponseEntity<ResponseClientDto> post(@Valid @RequestBody RequestClientDto requestClient,
-      UriComponentsBuilder uriComponentsBuilder) {
-    ResponseClientDto responseClientDTO = clientService.save(requestClient);
-    URI uri = uriComponentsBuilder.path("/clients/{id}").buildAndExpand(responseClientDTO.getId()).toUri();
-    return ResponseEntity.created(uri).body(responseClientDTO);
-  }
+//  @PostMapping
+//  public ResponseEntity<ResponseClientDto> post(@Valid @RequestBody RequestClientDto requestClient,
+//      UriComponentsBuilder uriComponentsBuilder) {
+//    ResponseClientDto responseClientDTO = clientService.save(requestClient);
+//    URI uri = uriComponentsBuilder.path("/clients/{id}").buildAndExpand(responseClientDTO.getIdCliente()).toUri();
+//    return ResponseEntity.created(uri).body(responseClientDTO);
+//  }
 
 }
