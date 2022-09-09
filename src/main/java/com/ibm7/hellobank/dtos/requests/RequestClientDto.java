@@ -9,12 +9,12 @@ import lombok.Data;
 
 @Data
 public class RequestClientDto {
-  private Long id;
+  private Integer idCliente;
   @NotBlank
   private String nome;
   @NotBlank
   @CPF
-  private String cpf;
+  private String cpfCliente;
   @NotBlank
   @Email
   private String email;

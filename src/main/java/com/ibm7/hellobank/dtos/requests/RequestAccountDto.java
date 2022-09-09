@@ -6,13 +6,11 @@ import lombok.Data;
 
 @Data
 public class RequestAccountDto {
-  private Long id;
+  private Integer idConta;
   @NotBlank
   private String agencia;
   @NotBlank
   private String numeroConta;
-  private String deposito;
-  private String saque;
   private RequestClientDto clientRequest;
 
 }

@@ -10,7 +10,7 @@ import com.ibm7.hellobank.dtos.responses.ResponseAccountDto;
 import com.ibm7.hellobank.models.Conta;
 
 @Service
-public class AccountService {
+public class ContaServiceImpl {
 
   @Autowired
   private ContaDAO accountDao;
