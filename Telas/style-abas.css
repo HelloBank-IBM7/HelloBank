@@ -129,7 +129,7 @@ cursor: pointer;
 
 .search-box {
     position: absolute;
-    left: 35%;
+    left: 6%;
     top: 12%;
     background: #35d4ccfb;
     height: 40px;
@@ -145,6 +145,11 @@ cursor: pointer;
     display:none;
 }
 
+.search-box:hover > .search-text{
+    width: 320px;
+    padding-left: 20px;
+}
+
 .search-text{
     background: none;
     border: 0;
@@ -152,6 +157,7 @@ cursor: pointer;
     font-size: 14px;
     width: 0;
     padding: 0;
+    transition: 0.4s;
 }
 
 .search-btn{
@@ -160,10 +166,11 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    
-
+    border-radius: 50%;  
+    cursor: pointer;  
 }
+
+
 
 
 
