@@ -20,7 +20,7 @@ body{
     height: 100vh;
 }
 
-.transacao {
+.principal {
     width: 90%;
     height: 80vh;
     display: flex;
