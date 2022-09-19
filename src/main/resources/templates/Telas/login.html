@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesone CDN link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Link CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>HelloBank - Login</title>
+</head>
+<body>
+    <div class="container">
+        <!--login form-->
+        <div class="login-form">
+            <div class="title">HelloBank - Acesso </div>
+            <form method="post" action="/logar">
+
+                <div th:if="${erro != null}" th:text="${erro}" class="alert alert-danger" role="alert"></div>
+                <div th:if="${login != null}" th:text="${login" class="alert" role="alert"></div>
+
+                <div class="input-box">
+                    <i class="fa fa-envelope"></i>
+                    <input type="text" placeholder="Usuário de login" required name="usuario">
+                </div>
+
+                <div class="input-box">
+                    <i class="fa fa-envelope"></i>
+                    <input type="password" placeholder="Senha de login" required name="senha">
+                </div>
+
+                <div class="input-box">
+                    <input type="submit" value="Entrar">
+                </div>
+               
+            </form>
+        </div>
+        <!--end login form-->
+        <!--login img-->
+        <div class="login-img">
+            <img src="imagens/Software code.png" width="100%">
+
+        </div>
+        <!--end login img-->
+    </div>
+
+</body>
+</html>

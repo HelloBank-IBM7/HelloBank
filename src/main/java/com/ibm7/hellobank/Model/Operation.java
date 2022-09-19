@@ -11,13 +11,11 @@ public class Operation {
     @Column(name = "id_transacao")
     private Integer idTransacao;
 
-    @ManyToOne
-    @JoinColumn(name = "conta_origem")
-    private Account contaOrigem;
+    @Column(name = "conta_origem")
+    private Integer contaOrigem;
 
-    @ManyToOne
-    @JoinColumn(name = "conta_destino")
-    private Account contaDestino;
+    @Column(name = "conta_destino")
+    private Integer contaDestino;
 
     @Column(name = "valor_transacao")
     private double valorTransacao;
@@ -34,22 +32,6 @@ public class Operation {
 
     public void setIdTransacao(Integer idTransacao) {
         this.idTransacao = idTransacao;
-    }
-
-    public Account getContaOrigem() {
-        return contaOrigem;
-    }
-
-    public void setContaOrigem(Account contaOrigem) {
-        this.contaOrigem = contaOrigem;
-    }
-
-    public Account getContaDestino() {
-        return contaDestino;
-    }
-
-    public void setContaDestino(Account contaDestino) {
-        this.contaDestino = contaDestino;
     }
 
     public double getValorTransacao() {
@@ -74,5 +56,21 @@ public class Operation {
 
     public void setTipoTransacao(String tipoTransacao) {
         this.tipoTransacao = tipoTransacao;
+    }
+
+    public Integer getContaOrigem() {
+        return contaOrigem;
+    }
+
+    public void setContaOrigem(Integer contaOrigem) {
+        this.contaOrigem = contaOrigem;
+    }
+
+    public Integer getContaDestino() {
+        return contaDestino;
+    }
+
+    public void setContaDestino(Integer contaDestino) {
+        this.contaDestino = contaDestino;
     }
 }
