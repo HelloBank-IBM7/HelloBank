@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  javaEcommerce:
+    container_name: ecommerce-java
+    image: IMG_PARA_SUBSTITUIR
+    environment:
+      MYSQL_HOST: ecommerce.cs9nb0cc2hc2.us-east-1.rds.amazonaws.com
+      DATABASE: ecommerce
+      MYSQL_USER: root
+      MYSQL_PASS: a2g6h3v5
+    ports:
+      - "8090:8090"
