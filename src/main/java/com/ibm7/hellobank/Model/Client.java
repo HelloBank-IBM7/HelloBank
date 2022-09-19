@@ -21,9 +21,8 @@ public class Client {
     @Column(name = "cpf_cliente", nullable = false, length=15)
     private String cpf;
 
-    @ManyToOne
-    @JoinColumn(name = "endereco_cliente")
-    private Address address;
+    @Column(name = "endereco_cliente", nullable = false)
+    private Integer enderecoCliente;
 
     public Integer getIdCliente() {
         return idCliente;
@@ -65,11 +64,11 @@ public class Client {
         this.cpf = cpf;
     }
 
-    public Address getAddress() {
-        return address;
+    public Integer getEnderecoCliente() {
+        return enderecoCliente;
     }
 
-    public void setAddress(Address address) {
-        this.address = address;
+    public void setEnderecoCliente(Integer enderecoCliente) {
+        this.enderecoCliente = enderecoCliente;
     }
 }

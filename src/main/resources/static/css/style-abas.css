@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(287.56deg, #437de2 0%, #16f9c1 100%);
+}
+
+.simulador-body {
+    height: 100vh;
+}
+
+.principal {
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.container{
+    width: 90%;
+    height: 115vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.form-image{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ada7fdd7;
+    padding: 1rem;
+}
+
+.form-image img {
+    width: 28rem;
+    position: absolute;
+}
+
+.form {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2rem;
+}
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-header h1::after {
+    content:'';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #6c63ff;
+    margin: 0 auto;
+    position: absolute; 
+    border-radius: 10px;
+}
+
+.form-titulo {
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.input-conta, .input-cliente, .input-endereco, .input-transacao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    font-size: 14px;
+}
+
+.input-transacao {
+    display: block;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input:hover{
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible{
+    outline: 1px solid #6c63ff;
+}
+
+.input-box label{
+    font-size: 0.75rem;
+    font-weight:600;
+    color: #000000c0;
+}
+
+.input-box input::placeholder{
+    color:#000000be;
+}
+
+.cadastrar-button, .atualizar-button, .excluir-button, .voltar-button, button{
+width: 15%;
+margin-top:2.5rem;
+margin: 0.5rem;
+display: inline;
+border: none;
+background-color: #6c63ff;
+padding: 0.62rem;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.simular-button button {
+    width: 100%;
+    margin-top:2.5rem;
+    margin: 0.5rem;
+    display: inline;
+    border: none;
+    background-color: #2ac490;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cadastrar-button, .atualizar-button, .excluir-button, .voltar-button, a{
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color:#fff;
+}
+
+.search-box {
+    position: absolute;
+    left: 6%;
+    top: 12%;
+    background: #35d4ccfb;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+.loupe-white {
+    display:none;
+}
+
+.search-box:hover > .search-text{
+    width: 320px;
+    padding-left: 20px;
+}
+
+.search-text{
+    background: none;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    width: 0;
+    padding: 0;
+    transition: 0.4s;
+}
+
+.search-btn{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;  
+    cursor: pointer;  
+}
