@@ -13,18 +13,31 @@ As pessoas que contribuíram para este projeto:
 <table>
   <tr>
     <td align="center">
-      <a href="#">
-        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="Foto da Jeisiane França no GitHub"/><br>
-        <sub>
-          <b> Jeisiane França </b>
-        </sub>
+      <a href="https://github.com/katrynribeiro" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/103230282?v=4" width="100px;" alt="Foto da Katryn Ribeiro no GitHub"/> <br>
+        <sub><b> Katryn Ribeiro </b></sub> <br>
+        <sub><i> BD + FrontEnd </sub> <br>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/rflsza13" target="_blank">
+        <img src="https://user-images.githubusercontent.com/66737556/191072857-75f04780-2fb3-4018-aebb-403abeb2ff86.jpg" width="100px;"alt="Foto do Rafael Souza no GitHub"/> <br>
+        <sub><b> Rafael Souza </b></sub> <br>
+        <sub><i> BackEnd </i></sub> <br>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/wvitorsj" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/74933042?v=4" width="100px;" alt="Foto do Vitor Silva no GitHub"/> <br>
+        <sub><b> Vitor Silva </b></sub> <br>
+        <sub><i> DevOps </i></sub> <br>
       </a>
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="Foto da Katryn Ribeiro no GitHub"/><br>
+        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="Foto da Jeisiane França no GitHub"/><br>
         <sub>
-          <b> Katryn Ribeiro </b>
+          <b> Jeisiane França </b>
         </sub>
       </a>
     </td>
@@ -44,61 +57,29 @@ As pessoas que contribuíram para este projeto:
         </sub>
       </a>
     </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="Foto do Rafael Souza no GitHub"/><br>
-        <sub>
-          <b> Rafael Souza </b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="Foto do Vitor Silva no GitHub"/><br>
-        <sub>
-          <b> Vitor Silva </b>
-        </sub>
-      </a>
-    </td>
   </tr>
 </table>
+
 <br>
 
 > ## 💻 Tecnologias Usadas
 
 Tecnologias usadas nesse projeto
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="https://img.shields.io/badge/Git-E34F26?style=for-the-badge&logo=git&logoColor=white"/>
-    </td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"/>
-    </td>
-        <td align="center">
-      <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"/>
-    </td>
-        <td align="center">
-      <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white"/>
-    </td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"/>
-    </td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/Jenkins-D33833?style=for-the-badge&logo=jenkins&logoColor=white"/>
-    </td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
-    </td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white"/>
-    </td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white"/>
-    </td>
-  </tr>
-</table>
+<code>
+  <img src="https://img.shields.io/badge/Git-E34F26?style=for-the-badge&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"/>
+  <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Jenkins-D33833?style=for-the-badge&logo=jenkins&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white"/>
+</code>
+
+<br>
+<br>
 <br>
 
 > ## 📓 Objetivo do Projeto
@@ -121,9 +102,11 @@ Tecnologias usadas nesse projeto
       <li> Exclusão de Transações </li>
     </ul>
   </ul>
-  <br>
   
+<br>
+
 > ## Endpoints
+
 <br>
 
 > ## Banco de Dados
@@ -132,14 +115,14 @@ Tecnologias usadas nesse projeto
  
   ```
   CREATE TABLE `endereco` (
-  `id_endereco` int NOT NULL AUTO_INCREMENT,
-  `logradouro` varchar(150) NOT NULL,
-  `numero_endereco` varchar(7) NOT NULL,
-  `bairro` varchar(60) NOT NULL,
-  `cidade` varchar(50) NOT NULL,
-  `estado` varchar(2) NOT NULL,
-  `cep` varchar(9) NOT NULL,
-  PRIMARY KEY (`id_endereco`));
+    `id_endereco` int NOT NULL AUTO_INCREMENT,
+    `logradouro` varchar(150) NOT NULL,
+    `numero_endereco` varchar(7) NOT NULL,
+    `bairro` varchar(60) NOT NULL,
+    `cidade` varchar(50) NOT NULL,
+    `estado` varchar(2) NOT NULL,
+    `cep` varchar(9) NOT NULL,
+    PRIMARY KEY (`id_endereco`));
   ```
   <h5> Criação da tabela de Clientes: </h5>
   
@@ -160,7 +143,7 @@ Tecnologias usadas nesse projeto
   
   ```
     CREATE TABLE `conta` (
-      `id_conta` int NOT NULL,
+      `id_conta` int NOT NULL AUTO_INCREMENT,
       `agencia_conta` int NOT NULL,
       `numero_conta` int NOT NULL,
       `saldo` double DEFAULT NULL,
@@ -174,7 +157,7 @@ Tecnologias usadas nesse projeto
   
   ```
     CREATE TABLE `transacao` (
-      `id_transacao` int NOT NULL,
+      `id_transacao` int NOT NULL AUTO_INCREMENT,
         `conta_origem` int,
         `conta_destino` int NOT NULL,
         `valor_transacao` float NOT NULL,
@@ -182,9 +165,9 @@ Tecnologias usadas nesse projeto
         `tipo_transacao` varchar(15),
         PRIMARY KEY (`id_transacao`),
         KEY `fk_CliOrigin` (`conta_origem`),
-      CONSTRAINT `fk_CliOrigin` FOREIGN KEY (`conta_origem`) REFERENCES `conta` (`id_conta`),
-      KEY `fk_CliDest` (`conta_destino`),
-      CONSTRAINT `fk_CliDest` FOREIGN KEY (`conta_destino`) REFERENCES `conta` (`id_conta`));
+        CONSTRAINT `fk_CliOrigin` FOREIGN KEY (`conta_origem`) REFERENCES `conta` (`id_conta`),
+        KEY `fk_CliDest` (`conta_destino`),
+        CONSTRAINT `fk_CliDest` FOREIGN KEY (`conta_destino`) REFERENCES `conta` (`id_conta`));
   ```
 
 <h3> Modelo Entidade-Relacionamento: </h3>
