@@ -1,2 +1,2 @@
 #derruba para a aplicação pelo PID
-kill -9 $(lsof -ti:8090)
+kill -9 $(lsof -ti:8080)
