@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   javaEcommerce:
-    container_name: ecommerce-java
+    container_name: hellobank-ibm
     image: IMG_PARA_SUBSTITUIR
     environment:
       MYSQL_HOST: hellobank-rds.c0jzwg6p99gu.us-east-1.rds.amazonaws.com
