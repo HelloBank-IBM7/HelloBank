@@ -3,4 +3,4 @@ git checkout .
 git pull --force
 sed -i '' -e "s/IMG_PARA_SUBSTITUIR/wvitorsj\/hellobank-ibm:$TAG/" docker-compose.yml
 docker-compose down 
-docker-compose up 
+docker-compose up --detach
