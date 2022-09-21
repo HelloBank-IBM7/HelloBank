@@ -117,8 +117,7 @@ Tecnologias usadas nesse projeto
       <li> stop.sh => Derruba a aplçicação pelo PID </li>
       <li> start.sh => Limpa o package, recria e inicializa o package e executa o arquivo jar </li>
       <li> deploy.sh => Exclui docker image, recria image substituindo a versão, derruba a execução de conteiner (caso tenha) e e inicializa o docker-compose em background 
-      </li>
-            
+      </li>            
     </ul>
   </ul>
   
