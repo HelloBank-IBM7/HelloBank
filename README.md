@@ -1,4 +1,4 @@
-# Projeto HelloBank - Grupo 7
+# Projeto HelloBank - ImpactGrants{Grupo 7}
 
 > Status: ⚠🔧 Em Desenvolvimento 🔨⚠
 <br>
@@ -106,6 +106,22 @@ Tecnologias usadas nesse projeto
 <br>
 
 > ## Endpoints
+
+<br>
+
+> ## Arquivos de Comando
+  <ul> 
+    <H3> Lista dos arquivos de comando e sua funçaõ: </H3>
+    <ul>
+      <li> test.sh => Inicializa a plicação realizando os testes </li>
+      <li> stop.sh => Derruba a aplçicação pelo PID </li>
+      <li> start.sh => Limpa o package, recria e inicializa o package e executa o arquivo jar </li>
+      <li> deploy.sh => Exclui docker image, recria image substituindo a versão, derruba a execução de conteiner (caso tenha) e e inicializa o docker-compose em background 
+      </li>            
+    </ul>
+  </ul>
+  
+<br>
 
 <br>
 

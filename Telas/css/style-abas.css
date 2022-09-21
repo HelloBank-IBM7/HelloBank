@@ -45,7 +45,7 @@ body{
 
 .form-image img {
     width: 28rem;
-    position: absolute;
+    
 }
 
 .form {
@@ -124,7 +124,7 @@ body{
 }
 
 .cadastrar-button, .atualizar-button, .excluir-button, .voltar-button, button{
-width: 15%;
+width: 25%;
 margin-top:2.5rem;
 margin: 0.5rem;
 display: inline;
@@ -195,4 +195,58 @@ cursor: pointer;
     align-items: center;
     border-radius: 50%;  
     cursor: pointer;  
+}
+
+/*menu*/
+
+li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 20px 5px;
+    color:#fff;
+}
+
+li a:hover{
+    background-color: rga(178,224,230);
+    color: black;
+}
+
+ul {
+    list-style: none;
+    position: absolute;
+    top:70px;
+    width: 100%;
+}
+
+label[type="menu"] img {
+    width: 40px;
+    position: fixed;
+    left:1%;
+    top: 2%;
+}
+
+input[type="checkbox"] 
+{
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ nav {
+    transform: translateX(350px);
+
+}
+
+nav {
+    background-color: rgba(16,16,16,.5);
+    width: 350px;
+    height: 80%;
+    position: absolute;
+    left: -350px;
+    transition: all .5s;
+}
+
+label[type="menu"]{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
 }
