@@ -1,10 +1,10 @@
-package com.ibm7.hellobank.Controller.IO;
+package com.ibm7.hellobank.Controller.Tela;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class IMenuController {
+public class TelaMenuController {
 
     @RequestMapping("/Transacoes")
     public String telaTransacoes(){
@@ -21,18 +21,9 @@ public class IMenuController {
         return "Telas/clientes";
     }
 
-//    @RequestMapping("/ListaClientes")
-//    public String telaListaClientes() {
-//        return "Telas/clientes-cadastrados";
-//    }
-
-//    @RequestMapping("/Historico")
-//    public String telaHistorico(){
-//        return "Telas/transacoes";
-//    }
 
     @RequestMapping("/Usuario")
     public String telaUsuario(){
-        return "#";
+        return "Telas/usuario";
     }
 }

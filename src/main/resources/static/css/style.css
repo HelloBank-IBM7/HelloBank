@@ -99,3 +99,12 @@ body{
         display:none;
     }
 }
+
+nav {
+    background-color: rgba(16,16,16,.5);
+    width: 350px;
+    height: 80%;
+    position: absolute;
+    left: -350px;
+    transition: all .5s;
+}

@@ -1,4 +1,4 @@
-package com.ibm7.hellobank.Controller.IO;
+package com.ibm7.hellobank.Controller.Tela;
 
 import com.ibm7.hellobank.Model.Account;
 import com.ibm7.hellobank.Model.Operation;
@@ -14,7 +14,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @Controller
-public class IOperationController {
+public class TelaOperationController {
 
     @Autowired
     private OperationRepository repo;

@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/style-abas.css">
-        <title>Simulador de Transações | Hellobank</title>
+        <title>Cadastro de Usuários| Hellobank</title>
     </head>
 
     <body class="simulador-body">
@@ -36,37 +36,29 @@
                 <form>
                     <div class="form-header">
                         <div class="title">
-                            <h1>Simulador de transações</h1>
+                            <h1>Cadastro de Usuários</h1>
                         </div>
                     </div>
 
-                    <!-- FORMULÁRIO DE TRANSFERENCIA -->
+                    <!-- FORMULÁRIO DE USUARIOS -->
                     <div class="input-transacao">
 
+                        <div th:if="${erro != null}" th:text="${erro}" class="alert alert-danger" role="alert"></div>
+
                         <div class="input-box">
-                            <label for="conta-origem">Conta origem</label>
-                            <input id="conta-origem" type="text" name="contaOrigem" placeholder="000000-0" required >
+                            <i class="fa fa-envelope"></i>
+                            <input type="text" placeholder="Usuário de login" name="usuario" required>
                         </div>
 
                         <div class="input-box">
-                            <label for="conta-destino">Conta destino</label>
-                            <input id="conta-destino" type="text" name="contaDestino" placeholder="000000-0" required >
-                        </div>
-
-                        <div class="input-box">
-                            <label for="transferencia">Valor a transferir </label>
-                            <input id="transferencia" type="text" name="valorTransacao" placeholder="valor do saldo">
-                        </div>
-
-                        <div class="input-box">
-                            <label for="descricao">Valor a transferir </label>
-                            <input id="descricao" type="text" name="tipoTransacao" placeholder="Descrição">
+                            <i class="fa fa-envelope"></i>
+                            <input type="password" placeholder="Senha de login" name="senha" required>
                         </div>
 
                         <!--Botões-->
 
-                        <div class="simular-button">
-                            <button formmethod="post" formaction="/transacao/novo"><a>Simular</a></button>
+                        <div class="input-box">
+                            <input type="submit" value="Cadastrar">
                         </div>
 
                     </div>

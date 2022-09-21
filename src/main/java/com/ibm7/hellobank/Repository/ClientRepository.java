@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 public interface ClientRepository extends JpaRepository<Client, Integer> {
 
     @Query(value = "select * from cliente where nome_cliente like %:nome%", nativeQuery = true)
-    public Client buscaCliente(String nome);
+    public Client buscaClientebyName(String nome);
 
     @Query(value = "select * from cliente where id_cliente = :id", nativeQuery = true)
     public Client buscaCliente(Integer id);

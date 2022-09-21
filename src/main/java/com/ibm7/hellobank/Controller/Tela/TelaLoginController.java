@@ -1,4 +1,4 @@
-package com.ibm7.hellobank.Controller.IO;
+package com.ibm7.hellobank.Controller.Tela;
 
 import com.ibm7.hellobank.Model.User;
 import com.ibm7.hellobank.Repository.OperationRepository;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-public class ILoginController {
+public class TelaLoginController {
 
     @Autowired
     private UserRepository usuRepo;

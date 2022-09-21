@@ -1,4 +1,4 @@
-package com.ibm7.hellobank.Controller.IO;
+package com.ibm7.hellobank.Controller.Tela;
 
 import com.ibm7.hellobank.Model.Account;
 import com.ibm7.hellobank.Model.Address;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
-public class IClientController {
+public class TelaClientController {
 
     @Autowired
     private AccountRepository conRepo;
@@ -72,9 +72,9 @@ public class IClientController {
     @PostMapping("/DeletarClientes")
     public String deletar(Model model, Address address, Client client, Account account){
         String nome = client.getNome();
-        Client cli = cliRepo.buscaCliente(nome);
+        Client cli = cliRepo.buscaClientebyName(nome);
         Address end = endRepo.buscaEndereco(cli.getEnderecoCliente());
-        Account con = conRepo.buscaConta(cli.getIdCliente());
+        Account con = conRepo.buscaCliente(cli.getIdCliente());
         conRepo.deleteById(con.getIdConta());
         cliRepo.deleteById(cli.getIdCliente());
         endRepo.deleteById(end.getCodigoEndereco());
@@ -89,7 +89,7 @@ public class IClientController {
     @RequestMapping("/ListarClientes")
     public String lista(Model model, Client client){
         String nome = client.getNome();
-        Client cli = cliRepo.buscaCliente(nome);
+        Client cli = cliRepo.buscaClientebyName(nome);
         cliId = cli.getIdCliente();
         System.out.println(cliId);
         if (cli != null){
@@ -107,7 +107,7 @@ public class IClientController {
             model.addAttribute("eCidade", end.getCidadeEndereco());
             model.addAttribute("eEstado", end.getEstadoEndereco());
 
-            Account con = conRepo.buscaConta(cli.getIdCliente());
+            Account con = conRepo.buscaCliente(cli.getIdCliente());
             conId = con.getIdConta();
             model.addAttribute("nConta", con.getNumeroConta());
             model.addAttribute("nAgencia", con.getAgenciaConta());
