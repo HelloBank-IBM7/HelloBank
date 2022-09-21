@@ -9,4 +9,4 @@ services:
       MYSQL_USER: root
       MYSQL_PASS: a2b3c4d5
     ports:
-      - "8090:8090"
+      - "8090:8080"
