@@ -1,12 +1,12 @@
 {
     "AWSEBDockerrunVersion": "1",
     "Image": {
-        "Name": "wvitorsj/ecommerce-ibm:v0.0.2",
+        "Name": "wvitorsj/hellobank-ibm:v0.0.11",
         "Update": "true"
     },
     "Ports": [
         {
-            "ContainerPort": "8090"
+            "ContainerPort": "8080"
         }
     ] 
     
