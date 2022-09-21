@@ -33,30 +33,6 @@ As pessoas que contribuíram para este projeto:
         <sub><i> DevOps </i></sub> <br>
       </a>
     </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="Foto da Jeisiane França no GitHub"/><br>
-        <sub>
-          <b> Jeisiane França </b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="Foto do Eduardo Santos no GitHub"/><br>
-        <sub>
-          <b> Eduardo Santos </b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="Foto do Pedro Henrique no GitHub"/><br>
-        <sub>
-          <b> Pedro Henrique </b>
-        </sub>
-      </a>
-    </td>
   </tr>
 </table>
 
@@ -111,7 +87,7 @@ Tecnologias usadas nesse projeto
 
 > ## Arquivos de Comando
   <ul> 
-    <H3> Lista dos arquivos de comando e sua funçaõ: </H3>
+    <H3> Lista dos arquivos de comando e sua função: </H3>
     <ul>
       <li> test.sh => Inicializa a plicação realizando os testes </li>
       <li> stop.sh => Derruba a aplçicação pelo PID </li>
@@ -123,13 +99,12 @@ Tecnologias usadas nesse projeto
   
 <br>
 
-<br>
-
 > ## Banco de Dados
- 
- <h5> Criação da tabela de Endereços: </h5>
- 
-  ```
+
+ <details>
+  <summary> <h5> Criação da tabela de Endereços: </h5> </summary>
+  
+  ```Sql
   CREATE TABLE `endereco` (
     `id_endereco` int NOT NULL AUTO_INCREMENT,
     `logradouro` varchar(150) NOT NULL,
@@ -140,9 +115,12 @@ Tecnologias usadas nesse projeto
     `cep` varchar(9) NOT NULL,
     PRIMARY KEY (`id_endereco`));
   ```
-  <h5> Criação da tabela de Clientes: </h5>
+ </details>
   
-  ```
+ <details>
+  <summary> <h5> Criação da tabela de Clientes: </h5> </summary>
+    
+  ```Sql
   CREATE TABLE `cliente` (
     `id_cliente` int NOT NULL AUTO_INCREMENT,
     `nome_cliente` varchar(90) NOT NULL,
@@ -154,10 +132,12 @@ Tecnologias usadas nesse projeto
     KEY `fk_EndCli` (`endereco_cliente`),
     CONSTRAINT `fk_EndCli` FOREIGN KEY (`endereco_cliente`) REFERENCES `endereco` (`id_endereco`));
   ```
+ </details>
   
-  <h5> Criação da tabela de Contas: </h5>
-  
-  ```
+ <details>
+  <summary> <h5> Criação da tabela de Contas: </h5> </summary>
+
+  ```Sql
     CREATE TABLE `conta` (
       `id_conta` int NOT NULL AUTO_INCREMENT,
       `agencia_conta` int NOT NULL,
@@ -168,10 +148,12 @@ Tecnologias usadas nesse projeto
       KEY `fk_ContCli` (`id_cliente`),
       CONSTRAINT `fk_ContCli` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`));
   ```
+ </details>
   
-  <h5> Criação da tabela de Transações: </h5>
-  
-  ```
+ <details>
+  <summary> <h5> Criação da tabela de Transações: </h5> </summary>
+
+  ```Sql
     CREATE TABLE `transacao` (
       `id_transacao` int NOT NULL AUTO_INCREMENT,
         `conta_origem` int,
@@ -185,8 +167,9 @@ Tecnologias usadas nesse projeto
         KEY `fk_CliDest` (`conta_destino`),
         CONSTRAINT `fk_CliDest` FOREIGN KEY (`conta_destino`) REFERENCES `conta` (`id_conta`));
   ```
+ </details>
 
 <h3> Modelo Entidade-Relacionamento: </h3>
 <img src="https://user-images.githubusercontent.com/66737556/190691890-1c7b4380-4040-4f24-9c9c-4cc89f67783e.png" alt="DER">
  
-Script SQL: https://github.com/HelloBank-IBM7/HelloBank/files/9585892/hellobank.zip
+Script SQL: https://github.com/HelloBank-IBM7/HelloBank/files/9616332/hellobank.zip
