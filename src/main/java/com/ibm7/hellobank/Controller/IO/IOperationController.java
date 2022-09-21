@@ -6,10 +6,12 @@ import com.ibm7.hellobank.Repository.AccountRepository;
 import com.ibm7.hellobank.Repository.OperationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 
 @Controller
 public class IOperationController {
@@ -20,7 +22,7 @@ public class IOperationController {
     @Autowired
     private AccountRepository conRepo;
 
-    public Account conta;
+    private Account conta;
 
 
     @PostMapping("/transacao/novo")
@@ -45,5 +47,12 @@ public class IOperationController {
             return "Telas/simulador";
         }
         return "Telas/simulador";
+    }
+
+    @GetMapping("/Historico")
+    public String historico(Model model){
+        List<Operation> op = (List<Operation>) this.repo.findAll();
+        model.addAttribute("transacao", op);
+        return "Telas/transacoes";
     }
 }

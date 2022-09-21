@@ -8,8 +8,8 @@
     <!-- font awesone CDN link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Link CSS-->
-    <link rel="stylesheet" href="style.css">
-    <title>HelloBank - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login | Hellobank</title>
 </head>
 <body>
     <div class="container">
@@ -19,22 +19,21 @@
             <form method="post" action="/logar">
 
                 <div th:if="${erro != null}" th:text="${erro}" class="alert alert-danger" role="alert"></div>
-                <div th:if="${login != null}" th:text="${login" class="alert" role="alert"></div>
 
                 <div class="input-box">
                     <i class="fa fa-envelope"></i>
-                    <input type="text" placeholder="Usuário de login" required name="usuario">
+                    <input type="text" placeholder="Usuário de login" name="usuario" required>
                 </div>
 
                 <div class="input-box">
                     <i class="fa fa-envelope"></i>
-                    <input type="password" placeholder="Senha de login" required name="senha">
+                    <input type="password" placeholder="Senha de login" name="senha" required>
                 </div>
 
                 <div class="input-box">
                     <input type="submit" value="Entrar">
                 </div>
-               
+
             </form>
         </div>
         <!--end login form-->

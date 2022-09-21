@@ -13,22 +13,22 @@ public class Address {
     private Integer codigoEndereco;
 
     @Column(name="logradouro", length=150)
-    private String logradouro;
+    private String ruaEndereco;
 
     @Column(name="numero_endereco", length=7)
     private String numeroEndereco;
 
     @Column(name="bairro", length= 60)
-    private String bairro;
+    private String bairroEndereco;
 
     @Column(name="cidade", length= 50)
-    private String cidade;
+    private String cidadeEndereco;
 
     @Column(name="estado", length= 2)
-    private String estado;
+    private String estadoEndereco;
 
     @Column(name="cep", length = 9)
-    private String cep;
+    private String cepEndereco;
 
     public Integer getCodigoEndereco() {
         return codigoEndereco;
@@ -38,12 +38,12 @@ public class Address {
         this.codigoEndereco = codigoEndereco;
     }
 
-    public String getLogradouro() {
-        return logradouro;
+    public String getRuaEndereco() {
+        return ruaEndereco;
     }
 
-    public void setLogradouro(String logradouro) {
-        this.logradouro = logradouro;
+    public void setRuaEndereco(String ruaEndereco) {
+        this.ruaEndereco = ruaEndereco;
     }
 
     public String getNumeroEndereco() {
@@ -54,35 +54,35 @@ public class Address {
         this.numeroEndereco = numeroEndereco;
     }
 
-    public String getBairro() {
-        return bairro;
+    public String getBairroEndereco() {
+        return bairroEndereco;
     }
 
-    public void setBairro(String bairro) {
-        this.bairro = bairro;
+    public void setBairroEndereco(String bairroEndereco) {
+        this.bairroEndereco = bairroEndereco;
     }
 
-    public String getCidade() {
-        return cidade;
+    public String getCidadeEndereco() {
+        return cidadeEndereco;
     }
 
-    public void setCidade(String cidade) {
-        this.cidade = cidade;
+    public void setCidadeEndereco(String cidadeEndereco) {
+        this.cidadeEndereco = cidadeEndereco;
     }
 
-    public String getEstado() {
-        return estado;
+    public String getEstadoEndereco() {
+        return estadoEndereco;
     }
 
-    public void setEstado(String estado) {
-        this.estado = estado;
+    public void setEstadoEndereco(String estadoEndereco) {
+        this.estadoEndereco = estadoEndereco;
     }
 
-    public String getCep() {
-        return cep;
+    public String getCepEndereco() {
+        return cepEndereco;
     }
 
-    public void setCep(String cep) {
-        this.cep = cep;
+    public void setCepEndereco(String cepEndereco) {
+        this.cepEndereco = cepEndereco;
     }
 }

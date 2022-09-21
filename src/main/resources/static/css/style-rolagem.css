@@ -55,26 +55,25 @@ body{
     border-radius: 10px;
 }
 
-.botao {
-    
-    justify-content: center;
-    align-items: center;
+.simulador-button {
     display: flex;
-
+    align-items: center;
+    justify-content: center;
 }
 
-.voltar-button, .simulador-button, button{
+.simulador-button button{
+    width: 50%;
     margin-top:2.5rem;
     margin: 0.5rem;
+    display: inline;
     border: none;
     background-color: #6c63ff;
+    padding: 0.62rem;
     border-radius: 5px;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
     }
     
-.voltar-button, .simulador-button, a{
+.simulador-button a{
     text-decoration: none;
     font-size: 0.93rem;
     font-weight: 500;
@@ -92,4 +91,58 @@ th, td {
 
 th{
     color: #161091;
+}
+
+/*menu*/
+
+li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 20px 5px;
+    color:#fff;
+}
+
+li a:hover{
+    background-color: rga(178,224,230);
+    color: black;
+}
+
+ul {
+    list-style: none;
+    position: absolute;
+    top:70px;
+    width: 100%;
+}
+
+label[type="menu"] img {
+    width: 40px;
+    position: fixed;
+    left:1%;
+    top: 2%;
+}
+
+input[type="checkbox"] 
+{
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ nav {
+    transform: translateX(350px);
+
+}
+
+nav {
+    background-color: rgba(16,16,16,.5);
+    width: 350px;
+    height: 80%;
+    position: absolute;
+    left: -350px;
+    transition: all .5s;
+}
+
+label[type="menu"]{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
 }

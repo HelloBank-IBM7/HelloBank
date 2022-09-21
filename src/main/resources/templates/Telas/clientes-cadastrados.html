@@ -5,10 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style-rolagem.css">
-    <title>Total de Clientes</title>
+    <title>Lista de Clientes | Hellobank</title>
 </head>
 
 <body>
+    <!--MENU-->
+    <input type="checkbox" id="check">
+    <label for="check" type="menu">
+        <img src="imagens/menu.svg">
+    </label>
+
+    <nav>
+        <ul>
+            <li><a href="/Menu">Menu Principal</a></li>
+            <li><a href="/Clientes">Cadastro de Clientes</a></li>
+            <li><a href="/Usuario">Cadastro de Usuários</a></li>
+            <li><a href="/Transacoes">Simulador de Transações</a></li>
+            <li><a href="/Historico">Histórico de Transações</a></li>
+            <li><a href="/ListaClientes">Lista de Clientes Cadastrados</a></li>
+        </ul>
+    </nav>
+
     <div class="tela-transacao">
 
         <div class="form-cabecalho">
@@ -20,23 +37,23 @@
         <div class="historico">
             <table border="1">
                 <thead>
+                    <th>ID</th>
                     <th>Nome</th>
                     <th>Email</th>
                     <th>Telefone</th>
                     <th>CPF</th>
-                    <th>Conta</th>
-                    <th>Agência</th>
                 </thead>
-               
+                <tbody>
+                    <tr th:each="cli : ${cli}">
+                        <td th:text="${cli.idCliente}"></td>
+                        <td th:text="${cli.nome}"></td>
+                        <td th:text="${cli.email}"></td>
+                        <td th:text="${cli.telefone}"></td>
+                        <td th:text="${cli.cpf}"></td>
+                    </tr>
+                </tbody>
             </table>
 
         </div>
-
-        <!-- Botões -->
-        <div class="botao">
-            <div class="voltar-button">
-                <button><a href="menu.html">Voltar</a></button>
-            </div>
-
     </div>
 </body>

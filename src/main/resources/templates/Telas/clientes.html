@@ -4,28 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-abas.css">
-    <title>Formulario de cadastro</title>
+    <link rel="stylesheet" href="css/style-abas.css">
+    <title>Cadastro de Clientes | HelloBank</title>
 </head>
 
 <body>
+    <!--MENU-->
+    <input type="checkbox" id="check">
+    <label for="check" type="menu">
+        <img src="imagens/menu.svg">
+    </label>
+
+    <nav>
+        <ul>
+            <li><a href="/Menu">Menu Principal</a></li>
+            <li><a href="/Clientes">Cadastro de Clientes</a></li>
+            <li><a href="/Usuario">Cadastro de Usuários</a></li>
+            <li><a href="/Transacoes">Simulador de Transações</a></li>
+            <li><a href="/Historico">Histórico de Transações</a></li>
+            <li><a href="/ListaClientes">Lista de Clientes Cadastrados</a></li>
+        </ul>
+    </nav>
+
     <!--IMAGEM PRINCIPAL-->
     <div class="container">
         <div class="form-image">
-            <img src="imagens/clientes.svg">
+            <img class="imagem-menu" src="imagens/clientes.svg">
         </div>
 
-        <div class="search-box">
-            <input type="text" class="search-text" placeholder="Pesquisar" name="nome">
-            <a class="search-btn" href="/buscar">
-                <img class="loupe-blue" src="./imagens/loupe-blue.svg" alt="" width="25px" height="25px">
-                <img class="loupe-white" src="./imagens/loupe-white.svg" alt="" width="25px" height="25px">
-            </a>
+        <div>
+            <form class="search-box">
+                <input id="buscar" type="text" name="nome" class="search-text" placeholder="Pesquisar">
+                <button formmethod="post" formaction="/ListarClientes" style="display: none !important;"></button>
+                <a>
+                    <img class="loupe-blue" src="./imagens/loupe-blue.svg" alt="" width="25px" height="25px">
+                    <img class="loupe-white" src="./imagens/loupe-white.svg" alt="" width="25px" height="25px">
+                </a>
+            </form>
         </div>
         
     
         <div class="form">
-            <form action="#">
+            <form>
+                <div th:if="${erro != null}" th:text="${erro}" class="alert alert-danger" role="alert"></div>
+                <br>
                 <div class="form-header">
                     <div class="title">
                         <h1>Clientes </h1>
@@ -41,18 +63,18 @@
 
                     <div class="input-box">
                         <label for="conta">Conta</label>
-                        <input id="conta" type="text" name="numeroConta" placeholder="000000-0" required >
+                        <input id="conta" type="text" name="numeroConta" th:value="${nConta}" placeholder="000000-0" >
                     </div>
 
                     <div class="input-box">
                         <label for="agencia">Agência</label>
-                        <input id="agencia" type="text" name="agenciaConta" placeholder="0000-0" required >
+                        <input id="agencia" type="text" name="agenciaConta" th:value="${nAgencia}" placeholder="0000-0" >
                     </div>
 
                     <div class="input-box">
                         <label for="saldo">Saldo</label>
-                        <input id="saldo" type="text" name="saldoConta" placeholder="valor do saldo">
-                    </div>   
+                        <input id="saldo" type="text" name="saldoConta" th:value="${nSaldo}" placeholder="valor do saldo">
+                    </div>
                 </div>
 
                 <!-- FORMULÁRIO DOS DADOS PESSOAIS -->
@@ -63,23 +85,23 @@
                 <div class="input-cliente">
 
                     <div class="input-box">
-                        <label for="name">Primeiro nome</label>
-                        <input id="name" type="text" name="nome" placeholder="Digite o nome" required >
+                        <label for="name">Nome</label>
+                        <input id="name" type="text" name="nome" th:value="${cNome}" placeholder="Digite o nome">
                     </div>
 
                     <div class="input-box">
                         <label for="email">Email</label>
-                        <input id="email" type="text" name="email" placeholder="exemplo@dominio.com" required > 
+                        <input id="email" type="text" name="email" th:value="${cEmail}" placeholder="exemplo@dominio.com">
                     </div>
 
                     <div class="input-box">
                         <label for="telefone">Telefone</label>
-                        <input id="telefone" type="text" name="telefone" placeholder="(xx) xxxxx-xxxx" required > 
+                        <input id="telefone" type="text" name="telefone" th:value="${cTelefone}" placeholder="(xx) xxxxx-xxxx">
                     </div>
 
                     <div class="input-box">
                         <label for="cpf">CPF</label>
-                        <input id="cpf" type="text" name="cpf" placeholder="000.000.000-00" required > 
+                        <input id="cpf" type="text" name="cpf" th:value="${cCpf}" placeholder="000.000.000-00">
                     </div>
                 </div>
 
@@ -92,56 +114,50 @@
 
                 <div class="input-box">
                     <label for="cep">CEP</label>
-                    <input id="cep" type="text" name="cep" placeholder="00000-000" required > 
+                    <input id="cep" type="text" name="cepEndereco" th:value="${eCep}" placeholder="00000-000">
                 </div>
 
                 <div class="input-box">
                     <label for="rua">Logradouro</label>
-                    <input id="rua" type="text" name="logradouro" placeholder="Nome da Rua/Avenida" required >
+                    <input id="rua" type="text" name="ruaEndereco" th:value="${eRua}" placeholder="Nome da Rua/Avenida">
                 </div>
 
                 <div class="input-box">
                     <label for="numero">Numero</label>
-                    <input id="numero" type="text" name="numeroEndereco" placeholder="Numero do endereço" required >
+                    <input id="numero" type="text" name="numeroEndereco" th:value="${eNum}" placeholder="Numero do endereço">
                 </div>
-
 
                 <div class="input-box">
                     <label for="bairro">Bairro</label>
-                    <input id="bairro" type="text" name="bairro" placeholder="Digite o bairro" required >
+                    <input id="bairro" type="text" name="bairroEndereco" th:value="${eBairro}" placeholder="Digite o bairro" required >
                 </div>
 
                 <div class="input-box">
                     <label for="cidade">Cidade</label>
-                    <input id="cidade" type="text" name="cidade" placeholder="Digite a cidade" required > 
+                    <input id="cidade" type="text" name="cidadeEndereco" th:value="${eCidade}" placeholder="Digite a cidade">
                 </div>
 
                 <div class="input-box">
                     <label for="estado">Estado</label>
-                    <input id="estado" type="text" name="estado" placeholder="UF" required > 
+                    <input id="estado" type="text" name="estadoEndereco" th:value="${eEstado}" placeholder="UF">
                 </div>
             </div>
 
-            <!--Botões--> 
-            
+            <!--Botões-->
+
             <div class="cadastrar-button">
-                <button><a href="/cadastrar/endereco" onsubmit="return confirm('Confirma ação')">Cadastrar</a></button>
+                <button formmethod="post" formaction="/CadastrarClientes"><a>Cadastrar</a></button>
             </div>
 
             <div class="atualizar-button">
-                <button><a href="#">Atualizar</a></button>
+                <button formmethod="post" formaction="/AtualizarClientes"><a>Atualizar</a></button>
             </div>
 
             <div class="excluir-button">
-                <button><a href="#">Excluir</a></button>
-            </div>
-
-            <div class="voltar-button">
-                <button><a href="#">Voltar</a></button>
+                <button formmethod="post" formaction="/DeletarClientes"><a>Excluir</a></button>
             </div>
 
         </form>
-
     </div>
     </div>
 </body>

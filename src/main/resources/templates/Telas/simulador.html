@@ -1,68 +1,72 @@
 <!DOCTYPE html> 
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-abas.css">
-    <title>Formulario de cadastro</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style-abas.css">
+        <title>Simulador de Transações | Hellobank</title>
+    </head>
 
-<body class="simulador-body">
-    <!--IMAGEM PRINCIPAL-->
-    <div class="transacao">
-        <div class="form-image">
-            <img src="imagens/calculator.svg">
+    <body class="simulador-body">
+        <!--MENU-->
+    <input type="checkbox" id="check">
+    <label for="check" type="menu">
+        <img src="imagens/menu.svg">
+    </label>
+
+    <nav>
+        <ul>
+            <li><a href="/Menu">Menu Principal</a></li>
+            <li><a href="/Clientes">Cadastro de Clientes</a></li>
+            <li><a href="/Usuario">Cadastro de Usuários</a></li>
+            <li><a href="/Transacoes">Simulador de Transações</a></li>
+            <li><a href="/Historico">Histórico de Transações</a></li>
+            <li><a href="/ListaClientes">Lista de Clientes Cadastrados</a></li>
+        </ul>
+    </nav>
+
+        <!--IMAGEM PRINCIPAL-->
+        <div class="principal">
+            <div class="form-image">
+                <img src="imagens/calculator.svg">
+            </div>
+            
+            <div class="form">
+                <form>
+                    <div class="form-header">
+                        <div class="title">
+                            <h1>Simulador de transações</h1>
+                        </div>
+                    </div>
+
+                    <!-- FORMULÁRIO DE TRANSFERENCIA -->
+                    <div class="input-transacao">
+
+                        <div class="input-box">
+                            <label for="conta-origem">Conta origem</label>
+                            <input id="conta-origem" type="text" name="contaOrigem" placeholder="000000-0" required >
+                        </div>
+
+                        <div class="input-box">
+                            <label for="conta-destino">Conta destino</label>
+                            <input id="conta-destino" type="text" name="contaDestino" placeholder="000000-0" required >
+                        </div>
+
+                        <div class="input-box">
+                            <label for="transferencia">Valor a transferir </label>
+                            <input id="transferencia" type="text" name="valorTransacao" placeholder="valor do saldo">
+                        </div>
+
+                        <!--Botões-->
+
+                        <div class="simular-button">
+                            <button formmethod="post" formaction="/transacao/novo"><a>Simular</a></button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
         </div>
-        
-        <div class="form">
-            <form method="post" action="/transacao/novo" onsubmit="return confirm('Confirma ação')">
-                <div class="form-header">
-                    <div class="title">
-                        <h1>Simulador de transações</h1>
-                    </div>
-                </div>
-
-                <!-- FORMULÁRIO DE TRANSFERENCIA -->
-                <div class="input-transacao">
-
-                    <div class="input-box">
-                        <label for="conta-origem">Conta origem</label>
-                        <input id="conta-origem" type="text" name="contaOrigem" placeholder="000000-0" required >
-                    </div>
-
-                    <div class="input-box">
-                        <label for="conta-destino">Conta destino</label>
-                        <input id="conta-destino" type="text" name="contaDestino" placeholder="000000-0" required >
-                    </div>
-
-                    <div class="input-box">
-                        <label for="transferencia">Valor a transferir </label>
-                        <input id="transferencia" type="text" name="valorTransacao" placeholder="valor do saldo">
-                    </div>
-
-                    <div class="input-box">
-                        <label for="data">Data </label>
-                        <input id="data" type="text" name="dataTransacao" placeholder="00/00/0000">
-                    </div>
-
-                    <div class="input-box">
-                        <label for="tipo">Tipo da transação </label>
-                        <input id="tipo" type="text" name="tipoTransacao" placeholder="tipo da transação">
-                    </div>
-
-                    <!--Botões-->
-
-                    <div class="input-box">
-                        <input type="submit" value="Simular">
-                    </div>
-
-                    <div class="voltar-button">
-                        <button><a href="#">Voltar</a></button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-</body>
+    </body>
 </html>

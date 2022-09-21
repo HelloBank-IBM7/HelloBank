@@ -19,9 +19,8 @@ public class Account {
     @Column(name = "saldo")
     private Double saldoConta;
 
-    @ManyToOne
-    @JoinColumn(name = "id_cliente")
-    private Client client;
+    @Column(name = "id_cliente")
+    private Integer idCliente;
 
     public Integer getIdConta() {
         return idConta;
@@ -55,11 +54,11 @@ public class Account {
         this.saldoConta = saldoConta;
     }
 
-    public Client getClient() {
-        return client;
+    public Integer getIdCliente() {
+        return idCliente;
     }
 
-    public void setClient(Client client) {
-        this.client = client;
+    public void setIdCliente(Integer idCliente) {
+        this.idCliente = idCliente;
     }
 }

@@ -25,7 +25,7 @@ public class ILoginController {
 
 
     @RequestMapping("/logar")
-    public String Logar(Model model, User user){
+    public String logar(Model model, User user){
         User usu =this.usuRepo.Login(user.getUsuario(), user.getSenha());
         if (usu != null){
             return "Telas/menu";
