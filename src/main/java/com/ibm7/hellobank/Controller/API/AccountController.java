@@ -10,7 +10,6 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter
 
 import java.util.ArrayList;
 
-@RequestMapping(path="/hellobank")
 @RestController
 public class AccountController {
 

@@ -42,7 +42,7 @@ public class TelaClientController {
         System.out.println("teste 3: " + con.getIdConta());
 
         if (con != null){
-            model.addAttribute("erro", "Dados cadastros com Sucesso");
+            model.addAttribute("erro", "Dados cadastrados com Sucesso");
         } else {
             model.addAttribute("erro", "Erro ao cadastrar dados!");
         }
