@@ -1,6 +1,11 @@
 # Projeto HelloBank - ImpactGrants{Grupo 7}
 
-> Status: ⚠🔧 Em Desenvolvimento 🔨⚠
+> Status:  Completo! 💯🎉🎉
+
+<br>
+
+> link: http://hellobank.wvitorsj.com.br/
+
 <br>
 
 <img src="https://user-images.githubusercontent.com/66737556/190678385-3f80de8a-ca48-494e-acb5-273bcc50e45f.png" alt="Tela login">
@@ -18,6 +23,10 @@ As pessoas que contribuíram para este projeto:
         <sub><b> Katryn Ribeiro </b></sub> <br>
         <sub><i> BD + FrontEnd </sub> <br>
       </a>
+      <br>
+      <a href="https://www.linkedin.com/in/katryn-ribeiro/">
+        <img src="https://img.shields.io/badge/-katrynribeiro-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/katryn-ribeiro/"/>
+      </a>
     </td>
     <td align="center">
       <a href="https://github.com/rflsza13" target="_blank">
@@ -25,12 +34,20 @@ As pessoas que contribuíram para este projeto:
         <sub><b> Rafael Souza </b></sub> <br>
         <sub><i> BackEnd </i></sub> <br>
       </a>
+      <br>
+      <a href="https://www.linkedin.com/in/rsouza13/">
+        <img src="https://img.shields.io/badge/-rsouza13-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rsouza13/"/>
+      </a>
     </td>
     <td align="center">
       <a href="https://github.com/wvitorsj" target="_blank">
         <img src="https://avatars.githubusercontent.com/u/74933042?v=4" width="100px;" alt="Foto do Vitor Silva no GitHub"/> <br>
         <sub><b> Vitor Silva </b></sub> <br>
         <sub><i> DevOps </i></sub> <br>
+      </a>
+      <br>
+      <a href="https://www.linkedin.com/in/welton-vitor-da-silva-jesus-21104b206/">
+        <img src="https://img.shields.io/badge/-weltonvitor-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/welton-vitor-da-silva-jesus-21104b206/"/>
       </a>
     </td>
   </tr>
@@ -58,7 +75,14 @@ Tecnologias usadas nesse projeto
 <br>
 <br>
 
-> ## 📓 Objetivo do Projeto
+> ## 📓 Documentação do Projeto
+  O projeto foi documentado e organizazo utilizando Metodologias ágeis e fazendo a organização com o site Trello.
+  <h5> Quadro do Projeto </h5> <br>
+  <img src="https://user-images.githubusercontent.com/66737556/191650065-4e2b4314-9e66-484e-99d1-097b6ac48f06.png"/>
+  
+  <br>
+  
+> ## 🎯 Objetivo do Projeto
   Criação de uma API para para gerenciar as transações de um banco fictício, podendo efetuar o cadastro de novos clientes e contas, além de permitir a atualização e exclusão de cadastros já efetuados, além de listar as transações entre contas efetuadas.
   <ul> 
     <H3> Lista detalhada de funções: </H3>
@@ -81,11 +105,29 @@ Tecnologias usadas nesse projeto
   
 <br>
 
-> ## Endpoints
+> ## ⛔ Endpoints
+<details>
+  <summary> <h5> Método GET </h5> </summary>
+  <img width="900" src="https://user-images.githubusercontent.com/66737556/191646926-fbee98c9-b805-4d53-9e4d-d83bc6f601d6.png"/>
+</details>
 
+<details>
+  <summary> <h5> Método POST </h5> </summary>
+  <img width="900" src="https://user-images.githubusercontent.com/66737556/191647641-affa0af3-66a1-48d0-84d3-4bfa90012641.png"/>
+</details>
+
+<details>
+  <summary> <h5> Método PUT </h5> </summary>
+  <img width="900" src="https://user-images.githubusercontent.com/66737556/191648041-978684c8-472a-42b5-89b8-04fcf9188195.png"/>
+</details>
+
+<details>
+  <summary> <h5> Método DELETE </h5> </summary>
+  <img width="900" src="https://user-images.githubusercontent.com/66737556/191648256-982c3cfa-2eba-4842-aab8-39c9836b13c2.png"/>
+</details>
 <br>
 
-> ## Arquivos de Comando
+> ## #⃣ Arquivos de Comando
   <ul> 
     <H3> Lista dos arquivos de comando e sua função: </H3>
     <ul>
@@ -99,7 +141,7 @@ Tecnologias usadas nesse projeto
   
 <br>
 
-> ## Banco de Dados
+> ## 🎲 Banco de Dados
 
  <details>
   <summary> <h5> Criação da tabela de Endereços: </h5> </summary>
