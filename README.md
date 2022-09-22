@@ -76,7 +76,7 @@ Tecnologias usadas nesse projeto
 <br>
 
 > ## 📓 Documentação do Projeto
-  O projeto foi documentado e organizazo utilizando Metodologias ágeis e fazendo a organização com o site Trello.
+  O projeto foi documentado e organização utilizando Metodologias ágeis e fazendo a organização com o site Trello.
   <h5> Quadro do Projeto </h5> <br>
   <img src="https://user-images.githubusercontent.com/66737556/191650065-4e2b4314-9e66-484e-99d1-097b6ac48f06.png"/>
   
